@@ -1,0 +1,23 @@
+
+.footer{
+    background-color: rgb(61, 60, 60);
+    color: white;
+    height: 300px;
+
+        &__img{
+            width: 150px;
+            padding: 20px 0px 0px 40px;
+        }
+}
+
+.list{
+    &__choice{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+            &__icon{
+                margin-right: 10px;
+            }
+    }
+}

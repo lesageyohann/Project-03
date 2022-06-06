@@ -7,114 +7,115 @@
         <title>ohmyfood</title>          
     </head>
 <body>
-    <header>
+    <header class="header">
         <img class="img__header" src="./images/logo/ohmyfood.png" alt="logo oh my food">
     </header>
     <main>
-        <head>
-            <form>
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="search" placeholder="Paris,Belleville" class="search_line">
+        <section class="head">
+            <form class="head__form">
+                <i class="fa-solid fa-location-dot head__form__location"></i>
+                <input type="search" placeholder="Paris,Belleville" class="head__form__search_line">
             </form>
-            <h1>Réservez le menu qui vous convient</h1>
-            <h2>Découvrez des restaurant d'exeption, selectionné par nos soins.</h2>
-            <div>
-                <div>
-                    <p>Explorez nos restaurant</p>
-                </div>
-            </div>
-        </head>
-        <section>
-            <h1>Fonctionnement</h1>
-            <div>
-                <div>
-                    <i class="fa-solid fa-circle-1"></i>
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <p>Choississez un restaurant</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-circle-2"></i>
-                    <i class="fa-solid fa-list"></i>
-                    <p>Composez votre <menu></menu></p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-circle-3"></i>
-                    <i class="fa-solid fa-store"></i>
-                    <p>Dégustez au restaurant</p>
+            <h1 class="head__title">Réservez le menu qui vous convient</h1>
+            <h2 class="head__title">Découvrez des restaurant d'exeption, selectionné par nos soins.</h2>
+            <div class="head__btn">
+                <div class="head__btn_text">
+                    <p>Explorez nos restaurants</p>
                 </div>
             </div>
         </section>
-        <section>
-            <h1>Restaurant</h1>
-            <div>
-                <div>
-                    <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image restaurant La palette du goût">
-                    <div>
+        <section class="instructions">
+            <h1 class="instructions__title">Fonctionnement</h1>
+            <div class="instructions__block">
+                <div class="instructions__block__list">
+                    <i class="fa-solid fa-1 instructions__block__list__number"></i>
+                    <i class="fa-solid fa-mobile-screen instructions__block__list__icon"></i>
+                    <p class="instructions__block__list__text">Choississez un restaurant</p>
+                </div>
+                <div class="instructions__block__list">
+                    <i class="fa-solid fa-2 instructions__block__list__number"></i>
+                    <i class="fa-solid fa-list instructions__block__list__icon"></i>
+                    <p class="instructions__block__list__text">Composez votre menu</p>
+                </div>
+                <div class="instructions__block__list">
+                    <i class="fa-solid fa-3 instructions__block__list__number"></i>
+                    <i class="fa-solid fa-store instructions__block__list__icon"></i>
+                    <p class="instructions__block__list__text">Dégustez au restaurant</p>
+                </div>
+            </div>
+        </section>
+        <section class="restaurant">
+            <h1 class="restaurant__title">Restaurant</h1>
+            <div class="block">
+                <article class="block__article">
+                    <img class="block__article__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image restaurant La palette du goût">
+                    <div class="block__article__new">
                         <p>Nouveau</p>
                     </div>
-                    <div>
-                        <p>La palette du goût</p>
+                    <div class="block__article__text">
+                        <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
                     </div>
-                    <i class="fa-thin fa-heart"></i>
-                </div>
-                <div>
-                    <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image restaurant La palette du goût">
-                    <div>
+                    <i class="fa-regular fa-heart"></i>
+                </article>
+                <article class="block__article">
+                    <img class="block__article__img" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image restaurant La palette du goût">
+                    <div class="block__article__new">
+                        <p >Nouveau</p>
+                    </div>
+                    <div class="block__article__text">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne </p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </article>
+                <article class="block__article">
+                    <img class="block__article__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image restaurant La palette du goût">
+                    <div class="block__article__new">
                         <p>Nouveau</p>
                     </div>
-                    <div>
-                        <p>La note enchantée</p>
-                        <p>Charonne</p>
-                    </div>
-                    <i class="fa-thin fa-heart"></i>
-                </div>
-                <div>
-                    <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image restaurant La palette du goût">
-                    <div>
-                        <p>Nouveau</p>
-                    </div>
-                    <div>
-                        <p>A la francaise</p>
+                    <div class="block__article__text">
+                        <h3>A la francaise</h3>
                         <p>Cité Rouge</p>
                     </div>
-                    <i class="fa-thin fa-heart"></i>
-                </div><div>
-                    <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image restaurant La palette du goût">
+                    <i class="fa-regular fa-heart"></i>
+                </article>
+                <article class="block__article">
                     <div>
+                    <img class="block__article__img" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image restaurant La palette du goût">
+                    <div class="block__article__new">
                         <p>Nouveau</p>
                     </div>
-                    <div>
-                        <p>Le délice des sens</p>
+                    <div class="block__article__text">
+                        <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
                     </div>
-                    <i class="fa-thin fa-heart"></i>
-                </div>
+                    <i class="fa-regular fa-heart"></i>
+                </article>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <img class="img__footer" src="./images/logo/ohmyfood@2x.svg" alt="logo oh my food">
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-utensils"></i>
-                    <p>Proposer un restaurant</p>
+    <footer class="footer">
+        <img class="footer__img" src="./images/logo/ohmyfood.png" alt="logo oh my food">
+        <div class="footer__block">
+            <ul class="list">
+                <li class="list__choice">
+                    <i class="fa-solid fa-utensils list__choice__icon"></i>
+                    <p class="list__choice__text">Proposer un restaurant</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-handshake-simple"></i>
-                    <p>Devenir partanaire</p>
+                <li class="list__choice">
+                    <i class="fa-solid fa-handshake-angle list__choice__icon"></i>
+                    <p class="list__choice__text">Devenir partanaire</p>
                 </li>
-                <li>
-                    <p>Mentions légales</p>
+                <li class="list__choice">
+                    <p class="list__choice__text">Mentions légales</p>
                 </li>
-                <li>
-                    <p>Contact</p>
+                <li class="list__choice">
+                    <p class="list__choice__text">Contact</p>
                 </li>
             </ul>            
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/f802bb3a59.js" crossorigin="anonymous"></script> 
 </body>
 </html>
