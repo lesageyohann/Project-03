@@ -1,7 +1,12 @@
 .restaurant{
     display: flex;
     flex-direction: column;
-    background-color:rgb(221, 219, 219) ;
+    background-color:rgb(221, 219, 219);
+    margin: 40px 0px;
+
+        &__title{
+            margin-left: 10px;
+        }
 }
 
 .block{
@@ -9,7 +14,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
 
         &__article{
             background-color: white;
@@ -32,21 +36,33 @@
                     right: 10px;
                     background-color: #99E2D0                    ;
                     color: green;
-                    border-radius: 10px;
-                    width: 70px;
-                    height: 20px;
+                    border-radius: 5px;
+                    width: 80px;
+                    height: 25px;
                     text-align: center;
                 }
 
                 &__text{
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
                     height: 80px;
+                    padding: 0px 20px;
 
-                        &__title{
+                        &__name{
                             font-weight: bold;
+                            margin-bottom: 10px;
                         }
                 }
+
+                &__icon{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                }
         }
+}
+a{
+    text-decoration: none;
+    color: black;
 }
