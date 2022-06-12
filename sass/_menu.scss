@@ -1,0 +1,65 @@
+
+.top{
+    height: 250px;
+    width: 280px;
+
+    &__img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+
+    &__block{
+        display: flex;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px 20px 0px 0px;
+        border: 1px solid;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        top: 250px;
+
+            &__title{
+
+            }
+
+            &__icon{
+
+            }    
+    }
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 219, 219);
+
+        &__title{
+
+        }
+
+        &__article{
+            box-shadow: 1px 1px 1px 1px;
+            background-color: white;
+            border-radius: 10px;
+            width: 95%;
+            height: 65px;
+            margin: 5px 0px;
+            display: flex;
+
+            &__title{
+            }
+
+            &__block{
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid;
+                width: 100%;
+            }
+        }
+}
