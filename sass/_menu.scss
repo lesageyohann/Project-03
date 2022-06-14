@@ -3,6 +3,11 @@
     height: 250px;
     width: 100%;
 
+    @media( min-width: 768px){ 
+        height: 400px;
+        
+    }
+
     &__img{
         height: 200px;
         width: 100%;
@@ -12,21 +17,23 @@
 
     &__block{
         display: flex;
-        text-align: center;
         background-color: white;
         border-radius: 20px 20px 0px 0px;
-        border: 1px solid;
-        height: 50px;
         width: 100%;
         position: absolute;
         top: 250px;
 
             &__title{
+                flex-grow: 1;
+                padding: 20px 0px;
+                margin: 0px 15px;
 
             }
 
             &__icon{
-
+                width: 50px;
+                padding: 25px 0px;
+                margin: 0px 15px;
             }    
     }
     
@@ -34,10 +41,17 @@
 
 .menu{
     margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
 
         &__title{
-             border-bottom: 3px green solid;
+            margin-top: 25px;
 
+        }
+
+        &__border{
+            width: 25px;
+            border: 2px solid green;
         }
 
         &__article{
@@ -47,16 +61,27 @@
             width: 100%;
             height: 65px;
             margin: 10px 0px;
-            justify-content: center;
+            display: flex;
+            flex-direction: row;
 
-            &__title{
+
+            &__col1{
+                flex-grow: 1;
+                padding: 15px 0px;
+                margin-left: 10px;
             }
-
-            &__block{
-                display: flex;
-                justify-content: space-between;
-                border: 1px solid;
-                width: 100%;
+            &__col2{
+                width: 50px;
+                text-align: center;
+                font-weight: bold;
+                padding: 38px 0px;
+                margin-right: 10px;
+            }
+            &__col3{
+                width: 50px;
+                border-radius: 0px 10px 10px 0px;
+                padding: 15px 0px;
+                background-color: green;
             }
         }
 }
@@ -67,18 +92,4 @@
     justify-content: center;
     width: 100%;
     height: 150px;
-
-        &__btn{
-            display: flex;
-            align-items: center;
-            width: 200px;
-            height: 50px;
-            background-color: purple;
-            border-radius: 30px;
-
-                &__text{
-                    text-align: center;
-                    color: white;
-                }
-        }
 }
