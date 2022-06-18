@@ -18,10 +18,10 @@
     &__block{
         display: flex;
         background-color: white;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 40px 40px 0px 0px;
         width: 100%;
         position: absolute;
-        top: 250px;
+        top: 210px;
 
             &__title{
                 flex-grow: 1;
@@ -32,6 +32,7 @@
 
             &__icon{
                 width: 50px;
+                font-size: 20px;
                 padding: 25px 0px;
                 margin: 0px 15px;
             }    
@@ -45,13 +46,13 @@
     flex-direction: column;
 
         &__title{
-            margin-top: 25px;
 
         }
 
         &__border{
-            width: 25px;
-            border: 2px solid green;
+            width: 35px;
+            border: 1px solid #99E2D0;
+            margin-left: 0px;
         }
 
         &__article{
@@ -59,7 +60,7 @@
             background-color: white;
             border-radius: 10px;
             width: 100%;
-            height: 65px;
+            height: 75px;
             margin: 10px 0px;
             display: flex;
             flex-direction: row;
@@ -81,9 +82,21 @@
                 width: 50px;
                 border-radius: 0px 10px 10px 0px;
                 padding: 15px 0px;
-                background-color: green;
+                background-color: #99E2D0;
+                text-align: center;
+                
+
+                &__check{
+                    font-size: 20px;
+                    color: white;
+                    padding-top: 15px;
+                }
             }
         }
+}
+
+.menu2{
+    margin-top: 25px;
 }
 
 .order{

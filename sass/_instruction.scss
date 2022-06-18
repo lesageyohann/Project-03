@@ -16,13 +16,12 @@
             box-shadow: 0px -1px 3px 1px;
 
                 &__location{
-                    border: 1px solid;
                     padding: 11px 5px;
                 }
 
                 &__search_line{
                     background-color: rgb(190, 188, 188);
-                    border: 1px solid;
+                    border: none;
                     height: 40px;
                 }
         }
@@ -42,8 +41,8 @@
     width: 200px;
     height: 50px;
     color: white;
-    box-shadow: 0px 1px 3px 0px grey;
-     margin-bottom: 40px;
+    border: none;
+    margin-bottom: 40px;
 }    
 
 .instructions{

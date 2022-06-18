@@ -61,8 +61,8 @@
                     font-size: 30px;
                 }
         }
-}
-a{
-    text-decoration: none;
-    color: black;
+        &__article > a{
+            text-decoration: none;
+            color: black;
+        }
 }

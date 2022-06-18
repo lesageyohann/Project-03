@@ -2,11 +2,25 @@
   height: 50px;
   width: 100%;
   text-align: center;
-  padding-top: 20px;
+  position: relative;
 }
 
-.img__header {
-  width: 60%;
+.header__img {
+  height: 65%;
+  padding-top: 10px;
+}
+
+.header__return {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 70%;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -44,10 +58,10 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   background-color: white;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
   width: 100%;
   position: absolute;
-  top: 250px;
+  top: 210px;
 }
 
 .top__block__title {
@@ -60,6 +74,7 @@ h3 {
 
 .top__block__icon {
   width: 50px;
+  font-size: 20px;
   padding: 25px 0px;
   margin: 0px 15px;
 }
@@ -75,13 +90,10 @@ h3 {
           flex-direction: column;
 }
 
-.menu__title {
-  margin-top: 25px;
-}
-
 .menu__border {
-  width: 25px;
-  border: 2px solid green;
+  width: 35px;
+  border: 1px solid #99E2D0;
+  margin-left: 0px;
 }
 
 .menu__article {
@@ -90,7 +102,7 @@ h3 {
   background-color: white;
   border-radius: 10px;
   width: 100%;
-  height: 65px;
+  height: 75px;
   margin: 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +133,18 @@ h3 {
   width: 50px;
   border-radius: 0px 10px 10px 0px;
   padding: 15px 0px;
-  background-color: green;
+  background-color: #99E2D0;
+  text-align: center;
+}
+
+.menu__article__col3__check {
+  font-size: 20px;
+  color: white;
+  padding-top: 15px;
+}
+
+.menu2 {
+  margin-top: 25px;
 }
 
 .order {
@@ -174,13 +197,12 @@ h3 {
 }
 
 .head__form__location {
-  border: 1px solid;
   padding: 11px 5px;
 }
 
 .head__form__search_line {
   background-color: #bebcbc;
-  border: 1px solid;
+  border: none;
   height: 40px;
 }
 
@@ -198,8 +220,7 @@ h3 {
   width: 200px;
   height: 50px;
   color: white;
-  -webkit-box-shadow: 0px 1px 3px 0px grey;
-          box-shadow: 0px 1px 3px 0px grey;
+  border: none;
   margin-bottom: 40px;
 }
 
@@ -357,7 +378,7 @@ h3 {
   font-size: 30px;
 }
 
-a {
+.block__article > a {
   text-decoration: none;
   color: black;
 }
@@ -392,5 +413,10 @@ a {
 
 .list__choice__icon {
   margin-right: 10px;
+}
+
+.list__choice > a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
