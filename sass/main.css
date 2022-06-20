@@ -118,11 +118,14 @@ h3 {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 15px 0px;
-  margin-left: 10px;
+  margin: 0px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__article__col2 {
-  width: 50px;
+  min-width: 30px;
   text-align: center;
   font-weight: bold;
   padding: 38px 0px;
@@ -130,7 +133,7 @@ h3 {
 }
 
 .menu__article__col3 {
-  width: 50px;
+  min-width: 30px;
   border-radius: 0px 10px 10px 0px;
   padding: 15px 0px;
   background-color: #99E2D0;
