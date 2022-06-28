@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(Shrikhand-Regular.otf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular-webfont.woff);
+}
+
+h1{
+    font-size: 25px;
+    font-family: "shrikhand";
+}
+
+
+h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "shrikhand";
+}
+
+p{
+    font-family: "roboto";
+}

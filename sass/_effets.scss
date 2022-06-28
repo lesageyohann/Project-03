@@ -1,0 +1,12 @@
+.heart-1:hover{
+    display: none;
+    visibility: hidden;
+}
+.heart-2{
+    visibility: hidden;
+    display: none;    
+}
+.heart-2:hover{
+    display: contents;
+    visibility: visible;
+}
