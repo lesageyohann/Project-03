@@ -54,25 +54,35 @@
                             font-weight: bold;
                             margin-bottom: 10px;
                         }   
-                } 
-                
-                &__icon{
-                        width: 30px;
-                        font-size: 30px;
-                        }
-                        &:hover{
-                            overflow: hidden;
-                        }
-                &__icon2{
-                    width: 30px;
-                    font-size: 30px;
-                    color: $color-primaire;
-                    }
-
-                
+                }                
         }
         &__article > a{
             text-decoration: none;
             color: black;
         }
+}
+.divheart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 30px;
+    height: 30px;
+
+    &__1{
+        font-size: 30px;
+        &:hover{
+            visibility: hidden;
+            display: none;
+        }
+        &:hover > &__2{
+            visibility: visible;
+        }
+    }
+
+    &__2{
+        font-size: 30px;
+        color: $color-primaire;
+        overflow: hidden;
+
+    }
 }

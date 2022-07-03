@@ -32,8 +32,7 @@
             &__icon{
                 width: 50px;
                 font-size: 20px;
-                padding: 25px 0px;
-                margin: 0px 15px;
+                margin: 10px 50px;
             }    
     }
     
@@ -59,6 +58,12 @@
             display: flex;
             flex-direction: row;
 
+            &:hover > &__col3{
+                min-width: 40px;
+            }
+            &:hover > .check{
+                visibility: visible;
+            }
 
             &__col1{
                 flex-grow: 1;
@@ -82,17 +87,17 @@
                 margin-right: 10px;
             }
             &__col3{
-                min-width: 30px;
+                width: 0px;
                 border-radius: 0px 10px 10px 0px;
                 padding: 15px 0px;
                 background-color: $color-tertiaire;
-                text-align: center;
-                
+                text-align: center;                
 
                 &__check{
                     font-size: 20px;
                     color: white;
                     padding-top: 15px;
+                    visibility: hidden;
                 }
             }
         }
