@@ -1,4 +1,3 @@
-
 .top{
     height: 250px;
     width: 100%;
@@ -44,14 +43,9 @@
     margin: 0px 15px;
     display: flex;
     flex-direction: column;
-
-        &__title{
-
-        }
-
         &__border{
             width: 35px;
-            border: 1px solid #99E2D0;
+            border: 1px solid $color-tertiaire;
             margin-left: 0px;
         }
 
@@ -91,7 +85,7 @@
                 min-width: 30px;
                 border-radius: 0px 10px 10px 0px;
                 padding: 15px 0px;
-                background-color: #99E2D0;
+                background-color: $color-tertiaire;
                 text-align: center;
                 
 

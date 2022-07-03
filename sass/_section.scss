@@ -23,7 +23,6 @@
             height: 250px;
             margin: 10px 0px;
             position: relative;
-            border: 1px solid green;
 
                 &__img{
                     width: 100%;
@@ -36,8 +35,8 @@
                     position: absolute;
                     top:10px;
                     right: 10px;
-                    background-color: #99E2D0;
-                    color: green;
+                    background-color: $color-tertiaire;
+                    color: $color-tertiaire--alt;
                     border-radius: 5px;
                     width: 80px;
                     padding: 10px 10px;
@@ -50,7 +49,6 @@
                     align-items: center;
                     height: 80px;
                     padding: 0px 20px;
-                    border: 1px solid blue;
 
                         &__name{
                             font-weight: bold;
@@ -61,8 +59,15 @@
                 &__icon{
                         width: 30px;
                         font-size: 30px;
-                        border: 1px solid red;
                         }
+                        &:hover{
+                            overflow: hidden;
+                        }
+                &__icon2{
+                    width: 30px;
+                    font-size: 30px;
+                    color: $color-primaire;
+                    }
 
                 
         }

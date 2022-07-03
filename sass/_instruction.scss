@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background-color: rgb(221, 219, 219);
+    background-color: #dddbdb;
     height: 300px;
 
         &__form{
@@ -12,7 +12,7 @@
             justify-content:center;
             height: 40px;
             width: 100%;
-            background-color: rgb(190, 188, 188);
+            background-color: #dddbdb;
             box-shadow: 0px -1px 3px 1px;
 
                 &__location{
@@ -20,12 +20,11 @@
                 }
 
                 &__search_line{
-                    background-color: rgb(190, 188, 188);
+                    background-color: #dddbdb;
                     border: none;
                     height: 40px;
                 }
         }
-
         &__title{
             text-align: center;
         }
@@ -34,15 +33,19 @@
             text-align: center;
         }
 }
-
 .btn{
-    background-color: #FF79DA;
+    background: linear-gradient(to bottom right, $color-secondaire, $color-primaire);
     border-radius: 30px;
+    box-shadow: 0px 1px 3px 0px grey ;
     width: 200px;
     height: 50px;
     color: white;
     border: none;
     margin-bottom: 40px;
+    &:hover{
+        box-shadow: 0px 1px 3px 2px grey;
+        background:linear-gradient(to bottom right, $color-secondaire--alt, $color-primaire--alt);
+    }
 }    
 
 .instructions{
@@ -70,7 +73,7 @@
                     margin: 10px 0px;
 
                         &__number{
-                            background-color: #9356DC;
+                            background-color: $color-primaire ;
                             border-radius: 30px;
                             color: white;
                             text-align: center;
@@ -86,6 +89,13 @@
                         &__text{
                             font-weight: bold;
                         }
+                        &:hover{
+                            background-color: $color-secondaire--alt;
+                        }
+                        &:hover > &__icon{
+                            color: $color-primaire;
+                        }
                 }
+                
         }
 }

@@ -1,3 +1,4 @@
+/*couleurs*/
 .header {
   height: 50px;
   width: 100%;
@@ -187,21 +188,6 @@ p {
   height: 150px;
 }
 
-.heart-1:hover {
-  display: none;
-  visibility: hidden;
-}
-
-.heart-2 {
-  visibility: hidden;
-  display: none;
-}
-
-.heart-2:hover {
-  display: contents;
-  visibility: visible;
-}
-
 .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,7 +218,7 @@ p {
           justify-content: center;
   height: 40px;
   width: 100%;
-  background-color: #bebcbc;
+  background-color: #dddbdb;
   -webkit-box-shadow: 0px -1px 3px 1px;
           box-shadow: 0px -1px 3px 1px;
 }
@@ -242,7 +228,7 @@ p {
 }
 
 .head__form__search_line {
-  background-color: #bebcbc;
+  background-color: #dddbdb;
   border: none;
   height: 40px;
 }
@@ -256,13 +242,23 @@ p {
 }
 
 .btn {
-  background-color: #FF79DA;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 30px;
+  -webkit-box-shadow: 0px 1px 3px 0px grey;
+          box-shadow: 0px 1px 3px 0px grey;
   width: 200px;
   height: 50px;
   color: white;
   border: none;
   margin-bottom: 40px;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 1px 3px 2px grey;
+          box-shadow: 0px 1px 3px 2px grey;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79d986), to(#9256dcbb));
+  background: linear-gradient(to bottom right, #ff79d986, #9256dcbb);
 }
 
 .instructions {
@@ -329,6 +325,14 @@ p {
   font-weight: bold;
 }
 
+.instructions__block__list:hover {
+  background-color: #ff79d986;
+}
+
+.instructions__block__list:hover > .instructions__block__list__icon {
+  color: #9356DC;
+}
+
 .restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,7 +374,6 @@ p {
   height: 250px;
   margin: 10px 0px;
   position: relative;
-  border: 1px solid green;
 }
 
 .block__article__img {
@@ -386,7 +389,7 @@ p {
   top: 10px;
   right: 10px;
   background-color: #99E2D0;
-  color: green;
+  color: #2e8161;
   border-radius: 5px;
   width: 80px;
   padding: 10px 10px;
@@ -405,7 +408,6 @@ p {
           align-items: center;
   height: 80px;
   padding: 0px 20px;
-  border: 1px solid blue;
 }
 
 .block__article__text__name {
@@ -416,7 +418,16 @@ p {
 .block__article__icon {
   width: 30px;
   font-size: 30px;
-  border: 1px solid red;
+}
+
+.block__article:hover {
+  overflow: hidden;
+}
+
+.block__article__icon2 {
+  width: 30px;
+  font-size: 30px;
+  color: #9356DC;
 }
 
 .block__article > a {
