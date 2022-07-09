@@ -1,7 +1,9 @@
 /*couleurs*/
 $color-primaire:#9356DC;
-$color-primaire--alt:#9256dcbb;
+$color-primaire--alt:lighten($color-primaire, 35%);
 $color-secondaire: #FF79DA;
 $color-secondaire--alt: #ff79d986;
 $color-tertiaire: #99E2D0;
 $color-tertiaire--alt: #2e8161;
+$color-background: #f5f4f4;
+$color-background--alt: #ecebeb;

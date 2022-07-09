@@ -9,8 +9,23 @@
 }
 
 h1{
-    font-size: 25px;
-    font-family: "shrikhand";
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "roboto";
+}
+
+.nom{
+    font-family: "Shrikhand";
+    font-weight:normal;
+}
+
+.btn{
+    font-size: 14px;
+    font-family: "roboto";
+}
+
+h2{
+    font-family: "roboto";
 }
 
 
@@ -20,9 +35,11 @@ h3{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: "shrikhand";
+    font-family: "roboto";
+    font-weight: bold;
 }
 
 p{
+    font-size: 14px;
     font-family: "roboto";
 }

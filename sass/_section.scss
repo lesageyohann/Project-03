@@ -1,7 +1,7 @@
 .restaurant{
     display: flex;
     flex-direction: column;
-    background-color:rgb(221, 219, 219);
+    background-color: $color-background;
     padding: 40px 0px;
 
         &__title{
@@ -18,17 +18,18 @@
 
         &__article{
             background-color: white;
-            border-radius: 30px;
+            border-radius: 15px;
             width: calc(100% - 40px);
             height: 250px;
             margin: 10px 0px;
+            box-shadow: 0px 0px 2px 0px grey;
             position: relative;
 
                 &__img{
                     width: 100%;
                     height: 170px;
                     object-fit: cover;
-                    border-radius: 30px 30px 0px 0px;
+                    border-radius: 15px 15px 0px 0px;
                 }
 
                 &__new{
