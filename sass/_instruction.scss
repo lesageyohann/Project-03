@@ -59,6 +59,10 @@
 
          &__title{
             margin-left: -15px;
+
+            @media( min-width: 768px){
+                margin: 0px auto;
+            }
         }
 
         &__block{
@@ -66,6 +70,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            @media( min-width: 768px){
+                width: 400px;
+                margin: auto;
+            }
 
                 &__list{
                     border-radius: 15px;

@@ -6,6 +6,10 @@
 
         &__title{
             margin-left: 10px;
+
+            @media( min-width: 768px){
+                margin: 0px auto;
+            }
         }
 }
 
@@ -16,14 +20,22 @@
     align-items: center;
     justify-content: center;
 
+    @media( min-width: 768px){
+        justify-content: space-around;
+    }
+
         &__article{
             background-color: white;
             border-radius: 15px;
-            width: calc(100% - 40px);
+            width: calc(100% - 20px);
             height: 250px;
             margin: 10px 0px;
             box-shadow: 0px 0px 2px 0px grey;
             position: relative;
+
+            @media( min-width: 768px){
+                width: calc(50% - 20px);
+            }
 
                 &__img{
                     width: 100%;
@@ -68,22 +80,34 @@
     flex-wrap: nowrap;
     width: 30px;
     height: 30px;
+    border: 1px solid;
 
-    &__1{
+    &__vide{
         font-size: 30px;
-        &:hover{
-            visibility: hidden;
-            display: none;
-        }
-        &:hover > &__2{
-            visibility: visible;
-        }
+        opacity: 1;
+        transition: opacity 400ms ease; 
+        
+            &:hover{
+                opacity: 0;
+            }
+            &:hover > &__plein{
+                transform: scale(1);
+                opacity: 1;
+                
+            }      
     }
 
-    &__2{
+    &__plein{
         font-size: 30px;
-        color: $color-primaire;
-        overflow: hidden;
-
-    }
+        transform: scale(0);
+        background-color: linear-gradient(
+            to bottom,
+            $color-secondaire,
+            $color-secondaire 10%,
+            $color-primaire 90%
+        );
+        transition: transform 400ms ease;
+    } 
+    
+    
 }

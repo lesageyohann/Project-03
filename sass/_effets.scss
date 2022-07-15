@@ -1,0 +1,37 @@
+/* Effet check */
+.menu__article:hover .check {
+    animation: rotation 400ms ease-in-out;
+    }
+
+    @keyframes rotation {
+        0% {
+        transform:translate(40px) rotate(0deg);
+        }
+        100% {
+        transform:translate(0px) rotate(-360deg);
+        }
+    }
+
+/* apparition menu */
+$menu-dure: 1500ms;
+$menu-total: 3;
+$menu-delai: $menu-dure / $menu-total;
+
+.menu {
+    opacity: 0;
+    animation: menu $menu-dure forwards;
+    @for $i from 1 through $menu-total {
+        &--#{$i} {
+            animation-delay: $menu-delai * $i;
+        }
+    }
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

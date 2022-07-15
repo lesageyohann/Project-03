@@ -1,13 +1,11 @@
-.parent{
-    background-color: $color-background;
-
-    @media( min-width: 768px){
+@media( min-width: 768px){
         
-    }
 }
+
 .top{
     height: 250px;
-    width: 100%; 
+    width: 100%;
+    background-color: $color-background;
 
     &__img{
         height: 200px;
@@ -28,6 +26,14 @@
                 flex-grow: 1;
                 padding-top: 30px;
                 padding-left: 15px;
+
+                @media( min-width: 1200px){
+                    width: 300px;
+                    margin: 0px auto;
+                    padding-left: 0px;
+                    flex-grow: unset;
+                    text-align: center;
+                }
             }
 
             &__icon{
@@ -41,17 +47,33 @@
     
 }
 
+.parent{
+    background-color: $color-background;
+
+    @media( min-width: 1200px){
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 .menu{
     margin: 0px 15px;
     display: flex;
     flex-direction: column;
+
+    @media( min-width: 1200px){        
+        min-width: 380px;
+        cursor: pointer;
+        margin: 0px auto;
+        padding: 0px 5px;
+    }
+
         &__border{
             width: 35px;
             border: 1px solid $color-tertiaire;
             margin-left: 0px;
-        }
+        }        
 
         &__article{
             box-shadow: 0px 0px 10px 0px grey;
@@ -61,9 +83,9 @@
             height: 75px;
             margin: 10px 0px;
             display: flex;
-            flex-direction: row;
-            
+            flex-direction: row;            
             overflow: hidden;
+
             &:hover > &__col3{
                 min-width: 40px;
             }
@@ -71,45 +93,50 @@
                 visibility: visible;
             }
 
-            &__col1{
-                flex-grow: 1;
-                padding: 15px 0px;
-                margin: 0px 10px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-
-                p{
+                &__col1{
+                    flex-grow: 1;
+                    padding: 15px 0px;
+                    margin: 0px 10px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                }
-            }
-            &__col2{
-                min-width: 30px;
-                text-align: center;
-                font-weight: bold;
-                padding: 38px 0px;
-                margin-right: 10px;
-            }
-            &__col3{
-                width: 0px;
-                border-radius: 0px 10px 10px 0px;
-                padding: 15px 0px;
-                background-color: $color-tertiaire;
-                text-align: center;                
 
-                &__check{
-                    font-size: 20px;
-                    color: white;
-                    padding-top: 15px;
+                    p{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                 }
-            }
+                &__col2{
+                    min-width: 30px;
+                    text-align: center;
+                    font-weight: bold;
+                    padding: 38px 0px;
+                    margin-right: 10px;
+                }
+                &__col3{
+                    width: 0px;
+                    border-radius: 0px 10px 10px 0px;
+                    padding: 15px 0px;
+                    background-color: $color-tertiaire;
+                    text-align: center;                
+
+                    &__check{
+                        font-size: 20px;
+                        color: white;
+                        padding-top: 15px;
+                        transform-origin: 50% 65%;
+                    }
+                }
         }
 }
 
 .menu2{
     margin-top: 25px;
+
+    @media( min-width: 768px){
+        margin-top: 0px;
+    }
 }
 
 .order{
