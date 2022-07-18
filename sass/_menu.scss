@@ -87,7 +87,7 @@
             overflow: hidden;
 
             &:hover > &__col3{
-                min-width: 40px;
+                min-width: 60px;
             }
             &:hover > .check{
                 visibility: visible;
@@ -116,10 +116,12 @@
                 }
                 &__col3{
                     width: 0px;
+                    min-width: 0px;
                     border-radius: 0px 10px 10px 0px;
                     padding: 15px 0px;
                     background-color: $color-tertiaire;
-                    text-align: center;                
+                    text-align: center;
+                    transition: all 400ms ease-in-out;                
 
                     &__check{
                         font-size: 20px;
