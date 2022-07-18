@@ -8,7 +8,7 @@
         transform:translate(40px) rotate(0deg);
         }
         100% {
-        transform:translate(0px) rotate(-360deg);
+        transform:translate(0px) rotate(360deg);
         }
     }
 
@@ -35,3 +35,30 @@ $menu-delai: $menu-dure / $menu-total;
         opacity: 1;
     }
 }
+
+/* effet article */
+$article-dure: 1500ms;
+$article-total: 4;
+$article-delai: $article-dure / $article-total;
+
+.dishes {
+    opacity: 0;
+    animation:article $article-dure forwards; 
+    @for $i from 1 through $article-total {
+        &--#{$i} {
+            animation-delay: $article-delai * $i;
+        }
+    }
+}
+
+@keyframes article{
+    0%{
+        opacity: 0;
+        transform: translatey(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+
