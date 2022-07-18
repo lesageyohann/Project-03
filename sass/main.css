@@ -702,6 +702,7 @@ p {
     margin: 0px auto;
     padding: 0px;
     width: 300px;
+    text-align: center;
   }
 }
 
@@ -713,7 +714,7 @@ p {
 
 @media (min-width: 768px) {
   .footer__img {
-    margin: 10px auto;
+    margin-left: 0px;
   }
 }
 
@@ -736,6 +737,15 @@ p {
 
 .list__choice__icon {
   margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .list__choice {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0px;
+  }
 }
 
 .list__choice > a {
