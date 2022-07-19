@@ -137,6 +137,10 @@
           animation: card 15s infinite linear;
 }
 
+.loaderbox:hover {
+  animation: card 15s infinite reverse linear;
+}
+
 .loaderimage {
   position: absolute;
   padding: 10px;
