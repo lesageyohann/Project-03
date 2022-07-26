@@ -755,43 +755,37 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   width: 30px;
   height: 30px;
-  border: 1px solid;
+  position: relative;
 }
 
 .divheart__vide {
-  font-size: 30px;
-  opacity: 1;
-  -webkit-transition: opacity 400ms ease;
-  transition: opacity 400ms ease;
-}
-
-.divheart__vide:hover {
-  opacity: 0;
-}
-
-.divheart__vide:hover > .divheart__vide__plein {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .divheart__plein {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.divheart:hover .heart2 {
+  opacity: 1;
+}
+
+.heart1 {
   font-size: 30px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  background-color: linear-gradient(to bottom, #FF79DA, #FF79DA 10%, #9356DC 90%);
-  -webkit-transition: -webkit-transform 400ms ease;
-  transition: -webkit-transform 400ms ease;
-  transition: transform 400ms ease;
-  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.heart2 {
+  font-size: 30px;
+  color: #9356DC;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+  opacity: 0;
 }
 
 .footer {

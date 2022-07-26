@@ -76,38 +76,36 @@
 }
 .divheart{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     width: 30px;
     height: 30px;
-    border: 1px solid;
+    position: relative;
+    
 
     &__vide{
-        font-size: 30px;
-        opacity: 1;
-        transition: opacity 400ms ease; 
-        
-            &:hover{
-                opacity: 0;
-            }
-            &:hover > &__plein{
-                transform: scale(1);
-                opacity: 1;
-                
-            }      
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     &__plein{
-        font-size: 30px;
-        transform: scale(0);
-        background-color: linear-gradient(
-            to bottom,
-            $color-secondaire,
-            $color-secondaire 10%,
-            $color-primaire 90%
-        );
-        transition: transform 400ms ease;
-    } 
-    
-    
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover{
+        .heart2{
+            opacity: 1;
+        }
+    }
+}
+.heart1{
+    font-size: 30px;
+}
+
+.heart2{
+    font-size: 30px;
+    color: $color-primaire;
+    transition:  all 350ms;
+    opacity: 0;
 }
