@@ -39,7 +39,7 @@
             &__icon{
                 width: 50px;
                 font-size: 20px;
-                margin: 10px 0px;
+                margin: 20px 0px;
                 padding-top: 15px;
                 padding-right: 20px;
             }    
@@ -146,4 +146,5 @@
     justify-content: center;
     width: 100%;
     height: 150px;
+    background-color: $color-background;
 }
