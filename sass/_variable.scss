@@ -1,12 +1,11 @@
-/*couleurs*/
-$color-primaire:#9356DC;
-$color-primaire--alt:lighten($color-primaire, 35%);
-$color-secondaire: #FF79DA;
+/* couleurs */
+$color-primaire: #9356dc;
+$color-primaire--alt: lighten($color-primaire, 35%);
+$color-secondaire: #ff79da;
 $color-secondaire--alt: #ff79d986;
-$color-tertiaire: #99E2D0;
+$color-tertiaire: #99e2d0;
 $color-tertiaire--alt: #2e8161;
 $color-background: #f5f4f4;
 $color-background--alt: #ecebeb;
-$color-degrade:linear-gradient($color-primaire, $color-secondaire, $color-tertiaire);
-$color-degrade--alt:radial-gradient($color-tertiaire, $color-secondaire, $color-primaire);
-$color-degrade--alt2:radial-gradient($color-primaire, $color-secondaire, $color-tertiaire);
+$color-degrade: linear-gradient($color-primaire, $color-secondaire, $color-tertiaire);
+$color-degrade--alt: radial-gradient($color-tertiaire, $color-secondaire, $color-primaire);

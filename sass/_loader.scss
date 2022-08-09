@@ -1,72 +1,71 @@
 /* loader */
 
-.loader{
+.loader {
     z-index: 100;
     perspective: 1000px;
     box-sizing: border-box;
     position: fixed;
-    opacity: 0.9;
+    opacity: 0.8;
     animation: vanish 3s ease forwards;
     animation-delay: 3000ms;
-    top: 30%;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    
+    background-color: rgba($color: #ffffff, $alpha: 1);
 }
 
-
-.loaderbox{
+.loaderbox {
     margin: 0 auto 0;
     width: 225px;
     height: 100px;
     position: relative;
     transform-style: preserve-3d;
     animation: card 5s infinite ease-in-out;
+    top: 30%;
 }
-  
-.loaderimage{
+
+.loaderimage {
     position: absolute;
     padding: 10px 10px;
     width: 100%;
     height: 100%;
 }
 
-.loaderimage > path{
+.loaderimage > path {
     fill: white;
 }
 
-.face--1{
+.face--1 {
     background: $color-degrade;
     transform: rotateX(0deg) translateZ(122.5px);
 }
 
-.face--2{
+.face--2 {
     background: $color-degrade;
     transform: rotateY(90deg) translateZ(122.5px);
 }
 
-.face--3{
+.face--3 {
     background: $color-degrade;
     transform: rotateX(180deg) translateZ(122.5px) rotate(180deg);
 }
 
-.face--4{
+.face--4 {
     background: $color-degrade;
     transform: rotateY(-90deg) translateZ(122.5px);
 }
 
-@keyframes vanish{
-    100%{
+@keyframes vanish {
+    100% {
         opacity: 0;
         display: none;
         z-index: -1;
     }
 }
 
-@keyframes card{
-   from{
-    transform: rotateY(360deg);
-   }
+@keyframes card {
+    from {
+        transform: rotateY(360deg);
+    }
 }
-

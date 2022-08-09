@@ -1,9 +1,11 @@
-/*couleurs*/
+/* couleurs */
 /* Effet check */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 .menu__article:hover .check {
-  -webkit-animation: rotation 400ms ease-in-out;
-          animation: rotation 400ms ease-in-out;
+  -webkit-animation: rotation 500ms ease-in-out forwards;
+          animation: rotation 500ms ease-in-out forwards;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 
 @-webkit-keyframes rotation {
@@ -11,9 +13,13 @@
     -webkit-transform: translate(40px) rotate(0deg);
             transform: translate(40px) rotate(0deg);
   }
+  10% {
+    opacity: 1;
+  }
   100% {
     -webkit-transform: translate(0px) rotate(360deg);
             transform: translate(0px) rotate(360deg);
+    opacity: 1;
   }
 }
 
@@ -22,9 +28,13 @@
     -webkit-transform: translate(40px) rotate(0deg);
             transform: translate(40px) rotate(0deg);
   }
+  10% {
+    opacity: 1;
+  }
   100% {
     -webkit-transform: translate(0px) rotate(360deg);
             transform: translate(0px) rotate(360deg);
+    opacity: 1;
   }
 }
 
@@ -129,15 +139,16 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
-  opacity: 0.9;
+  opacity: 0.8;
   -webkit-animation: vanish 3s ease forwards;
           animation: vanish 3s ease forwards;
   -webkit-animation-delay: 3000ms;
           animation-delay: 3000ms;
-  top: 30%;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  background-color: white;
 }
 
 .loaderbox {
@@ -149,6 +160,7 @@
           transform-style: preserve-3d;
   -webkit-animation: card 5s infinite ease-in-out;
           animation: card 5s infinite ease-in-out;
+  top: 30%;
 }
 
 .loaderimage {
@@ -163,29 +175,29 @@
 }
 
 .face--1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
-  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), color-stop(#ff79da), to(#99e2d0));
+  background: linear-gradient(#9356dc, #ff79da, #99e2d0);
   -webkit-transform: rotateX(0deg) translateZ(122.5px);
           transform: rotateX(0deg) translateZ(122.5px);
 }
 
 .face--2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
-  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), color-stop(#ff79da), to(#99e2d0));
+  background: linear-gradient(#9356dc, #ff79da, #99e2d0);
   -webkit-transform: rotateY(90deg) translateZ(122.5px);
           transform: rotateY(90deg) translateZ(122.5px);
 }
 
 .face--3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
-  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), color-stop(#ff79da), to(#99e2d0));
+  background: linear-gradient(#9356dc, #ff79da, #99e2d0);
   -webkit-transform: rotateX(180deg) translateZ(122.5px) rotate(180deg);
           transform: rotateX(180deg) translateZ(122.5px) rotate(180deg);
 }
 
 .face--4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
-  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), color-stop(#ff79da), to(#99e2d0));
+  background: linear-gradient(#9356dc, #ff79da, #99e2d0);
   -webkit-transform: rotateY(-90deg) translateZ(122.5px);
           transform: rotateY(-90deg) translateZ(122.5px);
 }
@@ -377,7 +389,7 @@ p {
 
 .menu__border {
   width: 35px;
-  border: 1px solid #99E2D0;
+  border: 1px solid #99e2d0;
   margin-left: 0px;
 }
 
@@ -437,7 +449,7 @@ p {
   min-width: 0px;
   border-radius: 0px 10px 10px 0px;
   padding: 15px 0px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   text-align: center;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
@@ -447,6 +459,7 @@ p {
   font-size: 20px;
   color: white;
   margin-top: 15px;
+  opacity: 0;
 }
 
 .menu2 {
@@ -530,8 +543,8 @@ p {
 }
 
 .btn {
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 30px;
   -webkit-box-shadow: 0px 1px 3px 0px grey;
           box-shadow: 0px 1px 3px 0px grey;
@@ -540,16 +553,16 @@ p {
   color: white;
   border: none;
   margin-bottom: 40px;
+  cursor: pointer;
   -webkit-transition: all 400ms;
   transition: all 400ms;
-  cursor: pointer;
 }
 
 .btn:hover {
   -webkit-box-shadow: 0px 1px 3px 2px grey;
           box-shadow: 0px 1px 3px 2px grey;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ff79d986), to(#9356DC));
-  background: linear-gradient(to bottom right, #ff79d986, #9356DC);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79d986), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79d986, #9356dc);
 }
 
 .instructions {
@@ -613,7 +626,7 @@ p {
 }
 
 .instructions__block__list__number {
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 20px;
   color: white;
   text-align: center;
@@ -637,7 +650,7 @@ p {
 }
 
 .instructions__block__list:hover > .instructions__block__list__icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .restaurant {
@@ -716,7 +729,7 @@ p {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #2e8161;
   border-radius: 5px;
   width: 80px;
@@ -779,7 +792,11 @@ p {
 
 .heart2 {
   font-size: 30px;
-  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-transition: all 350ms;
   transition: all 350ms;
   opacity: 0;

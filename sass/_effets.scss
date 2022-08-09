@@ -1,16 +1,21 @@
 /* Effet check */
 .menu__article:hover .check {
-    animation: rotation 400ms ease-in-out;
-    }
+    animation: rotation 500ms ease-in-out forwards;
+    animation-delay: 100ms;
+}
 
-    @keyframes rotation {
-        0% {
-        transform:translate(40px) rotate(0deg);
-        }
-        100% {
-        transform:translate(0px) rotate(360deg);
-        }
+@keyframes rotation {
+    0% {
+        transform: translate(40px) rotate(0deg);
     }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px) rotate(360deg);
+        opacity: 1;
+    }
+}
 
 /* apparition menu */
 $menu-dure: 1500ms;
@@ -31,7 +36,7 @@ $menu-delai: $menu-dure / $menu-total;
     0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -43,7 +48,7 @@ $article-delai: $article-dure / $article-total;
 
 .dishes {
     opacity: 0;
-    animation:article $article-dure forwards; 
+    animation: article $article-dure forwards;
     @for $i from 1 through $article-total {
         &--#{$i} {
             animation-delay: $article-delai * $i;
@@ -51,15 +56,13 @@ $article-delai: $article-dure / $article-total;
     }
 }
 
-@keyframes article{
-    0%{
+@keyframes article {
+    0% {
         opacity: 0;
         transform: translatey(30px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translatey(0px);
     }
 }
-
-

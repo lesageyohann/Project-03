@@ -1,4 +1,4 @@
-.head{
+.head {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,111 +7,110 @@
     height: 300px;
     margin: 10px 0px;
 
-        &__form{
-            display: flex;
-            align-items: center;
-            justify-content:center;
-            height: 40px;
-            width: 100%;
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 100%;
+        background-color: $color-background--alt;
+        box-shadow: 0px -1px 3px 1px grey;
+
+        &__location {
+            padding: 11px 5px;
+        }
+
+        &__search_line {
             background-color: $color-background--alt;
-            box-shadow: 0px -1px 3px 1px grey;
-
-                &__location{
-                    padding: 11px 5px;
-                }
-
-                &__search_line{
-                    background-color: $color-background--alt;
-                    border: none;
-                    height: 40px;
-                    width: 150px;
-                }
+            border: none;
+            height: 40px;
+            width: 150px;
         }
-        &__title{
-            text-align: center;
-        }
+    }
+    &__title {
+        text-align: center;
+    }
 
-        &__texte{
-            text-align: center;
-        }
+    &__texte {
+        text-align: center;
+    }
 }
-.btn{
+.btn {
     background: linear-gradient(to bottom right, $color-secondaire, $color-primaire);
     border-radius: 30px;
-    box-shadow: 0px 1px 3px 0px grey ;
+    box-shadow: 0px 1px 3px 0px grey;
     width: 200px;
     height: 50px;
     color: white;
     border: none;
     margin-bottom: 40px;
-    transition: all 400ms;
     cursor: pointer;
-    &:hover{
+    transition: all 400ms;
+    &:hover {
         box-shadow: 0px 1px 3px 2px grey;
-        background:linear-gradient(to bottom right, $color-secondaire--alt, $color-primaire);
+        background: linear-gradient(to bottom right, $color-secondaire--alt, $color-primaire);
     }
-}    
+}
 
-.instructions{
+.instructions {
     display: flex;
     flex-direction: column;
     margin: 40px 0px;
     padding: 0px 32px;
 
-         &__title{
-            margin-left: -15px;
+    &__title {
+        margin-left: -15px;
 
-            @media( min-width: 768px){
-                margin: 0px auto;
-            }
+        @media (min-width: 768px) {
+            margin: 0px auto;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            width: 400px;
+            margin: auto;
         }
 
-        &__block{
+        &__list {
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px 0px grey;
+            width: 100%;
+            height: 50px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            margin: 10px 0px;
 
-            @media( min-width: 768px){
-                width: 400px;
-                margin: auto;
+            &__number {
+                background-color: $color-primaire;
+                border-radius: 20px;
+                color: white;
+                text-align: center;
+                margin: -15px;
+                padding: 7px 10px;
+                font-size: 10px;
             }
 
-                &__list{
-                    border-radius: 15px;
-                    box-shadow: 0px 0px 10px 0px grey;
-                    width: 100%;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    margin: 10px 0px;
+            &__icon {
+                color: grey;
+                margin: 0px 20px;
+                padding-left: 15px;
+            }
 
-                        &__number{
-                            background-color: $color-primaire ;
-                            border-radius: 20px;
-                            color: white;
-                            text-align: center;
-                            margin: -15px;
-                            padding: 7px 10px;
-                            font-size: 10px;
-                        }
-
-                        &__icon{
-                            color: grey;
-                            margin: 0px 20px;
-                            padding-left: 15px;
-                        }
-
-                        &__text{
-                            font-weight: bold;
-                        }
-                        &:hover{
-                            background-color: $color-primaire--alt;
-                        }
-                        &:hover > &__icon{
-                            color: $color-primaire;
-                        }
-                }
-                
+            &__text {
+                font-weight: bold;
+            }
+            &:hover {
+                background-color: $color-primaire--alt;
+            }
+            &:hover > &__icon {
+                color: $color-primaire;
+            }
         }
+    }
 }
